@@ -13,7 +13,7 @@ public class KeyStroke extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         BorderPane pane = new BorderPane();
-        Button button = new Button("Press Me!");
+        Button button = new Button("Press M");
         pane.setCenter(button);
         Scene scene = new Scene(pane, 200, 200);
         primaryStage.setScene(scene);
@@ -26,7 +26,18 @@ public class KeyStroke extends Application {
                 if (event.getCode() == KeyCode.ENTER) {
                     System.out.println("Enter Pressed");
                 }
-                if(event.getCode())
+                if(event.getCode() == KeyCode.D) {
+                	System.out.println("D");
+                }
+                if(event.getCode() == KeyCode.F) {
+                	System.out.println("F");
+                }
+                if(event.getCode() == KeyCode.J) {
+                	System.out.println("J");
+                }
+                if(event.getCode() == KeyCode.K) {
+                	System.out.println("K");
+                }
             }
         });
     }
