@@ -9,7 +9,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class KeyStroke extends Application {
-
+	 int count =0;
     @Override
     public void start(Stage primaryStage) throws Exception {
         BorderPane pane = new BorderPane();
@@ -18,7 +18,7 @@ public class KeyStroke extends Application {
         Scene scene = new Scene(pane, 200, 200);
         primaryStage.setScene(scene);
         primaryStage.show();
-
+        
         button.setOnKeyPressed(new EventHandler<KeyEvent>() {
 
             @Override
@@ -27,7 +27,8 @@ public class KeyStroke extends Application {
                     System.out.println("Enter Pressed");
                 }
                 if(event.getCode() == KeyCode.D) {
-                	System.out.println("D");
+                	count++;
+                	System.out.println(count);
                 }
                 if(event.getCode() == KeyCode.F) {
                 	System.out.println("F");
