@@ -20,15 +20,16 @@ public class KeyStroke extends Application {
         primaryStage.show();
         
         button.setOnKeyPressed(new EventHandler<KeyEvent>() {
-
+        	
+        	
             @Override
             public void handle(KeyEvent event) {
                 if (event.getCode() == KeyCode.ENTER) {
                     System.out.println("Enter Pressed");
                 }
                 if(event.getCode() == KeyCode.D) {
-                	count++;
-                	System.out.println(count);
+                	//count++;
+                	System.out.println("D");
                 }
                 if(event.getCode() == KeyCode.F) {
                 	System.out.println("F");
@@ -41,6 +42,7 @@ public class KeyStroke extends Application {
                 }
             }
         });
+        
     }
 
     public static void main(String[] args) {
